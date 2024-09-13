@@ -1,0 +1,157 @@
+:root {
+    --text-font: "DM Sans", sans-serif;
+    --color-purple-dark: #5D5A88;
+    --color-purple-medium: #8D8BA7;
+    --color-purple-light: #9795B5;
+    --color-purple-lilas-claro: #D4D2E3;
+    --color-purple-lilas-muito-claro: #F2F1FA;
+    --color-white: #fff;
+    --color-bg-form: #F9F9FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* equivale a 10px */
+}
+
+body {
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+}
+
+/* footer */
+footer {
+    padding: 2.4rem;
+}
+
+/* * botões */
+.btn {
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    padding: 1.6rem 2rem;
+    font-weight: 600;
+}
+
+.btn-custom {
+    background-color: var(--color-purple-dark);
+    color: var(--color-white);
+}
+
+.btn-custom:hover {
+    background-color: var(--color-purple-medium);
+    color: var(--color-white);
+}
+
+.btn-custom:active {
+    background-color: var(--color-purple-light) !important;
+    border: 1px solid var(--color-purple-light) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--color-purple-lilas-claro);
+    color: var(--color-purple-dark);
+}
+
+.btn-outline-custom:hover {
+    border: 2px solid var(--color-purple-lilas-claro);
+    color: var(--color-purple-medium);
+}
+
+.btn-outline-custom:active {
+    border: 2px solid var(--color-purple-lilas-claro) !important;
+    color: var(--color-purple-light) !important;
+}
+
+/* fontes */
+.custom-h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: var(--color-purple-dark);
+}
+
+.custom-h2 {
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: var(--color-purple-dark);
+}
+
+.custom-h3 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--color-purple-dark);
+}
+
+.custom-h4 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--color-purple-dark);
+}
+
+.custom-h5 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-purple-light);
+}
+
+.custom-h5-dark {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-purple-dark);
+}
+
+.custom-h6 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-purple-light);
+}
+
+.custom-h6-dark {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-purple-dark);
+}
+
+.custom-p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--color-purple-light);
+}
+
+/* formulários */
+.form-control {
+    background-color: var(--color-bg-form);
+    border: 1px solid var(--color-purple-lilas-muito-claro);
+}
+
+.form-label {
+    color: var(--color-purple-dark);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.form-custom {
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+::placeholder {
+    color: var(--color-purple-medium) !important;
+    font-size: 1.8rem;
+}
+
+.form-select {
+    color: var(--color-purple-medium) !important;
+    font-size: 1.8rem;
+}
+
+.form-datetime {
+    color: var(--color-purple-medium) !important;
+    font-size: 1.8rem;
+}

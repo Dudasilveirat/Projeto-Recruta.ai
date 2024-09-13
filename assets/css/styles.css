@@ -1,100 +1,20 @@
-:root {
-    --text-font: "DM Sans", sans-serif;
-    --color-purple-dark: #5D5A88;
-    --color-purple-medium: #8D8BA7;
-    --color-purple-light: #9795B5;
-    --color-purple-lilas-claro: #D4D2E3;
-    --color-purple-lilas-muito-claro: #F2F1FA;
-    --color-white: #fff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-    /* equivale a 10px */
-}
-
-body {
-    font-family: var(--text-font);
-    font-size: 1.6rem;
-}
-
+/* header */
 .navbar {
     background-color: transparent !important;
 }
 
-.nav-link {
-    color: var(--color-purple-dark);
+.link-custom {
+    color: var(--color-purple-dark) !important;
+    font-weight: 500;
 }
 
-.nav-link.active {
-    color: #5D5A88 !important;
-}
-
-.nav-link:hover {
+.link-custom:hover {
     color: var(--color-purple-medium) !important;
 }
 
-.btn {
-    font-size: 1.6rem;
-    border-radius: 30px;
-    padding: 16px 20px;
+.link-custom:active {
+    color: var(--color-purple-dark) !important;
     font-weight: 600;
-}
-
-.btn-custom {
-    background-color: var(--color-purple-dark);
-    color: var(--color-white);
-}
-
-.btn-custom:hover {
-    background-color: var(--color-purple-medium);
-    color: var(--color-white);
-}
-
-.btn-outline-custom {
-    border: 2px solid var(--color-purple-lilas-claro);
-    color: var(--color-purple-dark);
-}
-
-.btn-outline-custom:hover {
-    border: 2px solid var(--color-purple-lilas-claro);
-    color: var(--color-purple-medium);
-}
-
-.custom-h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    color: var(--color-purple-dark);
-}
-
-.custom-h3 {
-    font-size: 3.6rem;
-    font-weight: 700;
-    color: var(--color-purple-dark);
-}
-
-.custom-h5 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: var(--color-purple-light);
-}
-
-.custom-h6 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--color-purple-light);
-}
-
-.custom-p {
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: var(--color-purple-light);
 }
 
 .section {
@@ -112,7 +32,7 @@ body {
 }
 
 .card {
-    width: 260PX;
+    width: 260px;
     height: 280px;
     border-radius: 2rem;
     border: 1px solid var(--color-purple-lilas-claro);
@@ -121,6 +41,43 @@ body {
     padding: 2.4rem;
 }
 
-footer {
-    padding: 2.4rem;
+.upload-button {
+    background-color: transparent;
+    border: transparent;
+}
+
+.profile-header {
+    background-image: url(../imagens/capa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    padding: 2.8rem 10rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+}
+
+.header-edited {
+    background-image: url(../imagens/capa_2.jpg);
+}
+
+.profile-image {
+    border-radius: 1000px;
+    border: 5px solid var(--color-purple-lilas-claro);
+}
+
+.content {
+    border: 1px, solid var(--color-purple-lilas-claro);
+    border-radius: 2.4rem;
+    padding: 3.2rem;
+}
+
+.chip-custom {
+    color: var(--color-white);
+    font-weight: 700;
+    background-color: var(--color-purple-dark);
+    border-radius: 3rem;
+    padding: 1.4rem 2rem;
 }
