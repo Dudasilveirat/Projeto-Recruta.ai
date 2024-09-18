@@ -23,8 +23,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../imagens/Logo.png" alt="Logo da Recruta.ai">
+                    <img src="../../assets/imagens/Logo.png" alt="Logo da Recruta.ai">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -42,30 +42,34 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item me-2">
-                            <a class="nav-link link-custom" href="../../index.html">Home</a>
+                            <a class="nav-link link-custom" href="../home.html">Home</a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="nav-link link-custom" href="#">Vagas</a>
                         </li>
                         <li class="nav-item me-2">
-                            <a class="nav-link link-custom" href="../pages/contato.html">Contato</a>
+                            <a class="nav-link link-custom" href="../home_contato.html">Contato</a>
                         </li>
                         <li class="nav-item dropdown me-2">
                             <a class="nav-link dropdown-toggle link-custom" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Minha conta
-                            </a>
+                                data-bs-toggle="dropdown" aria-expanded="false">Minha conta</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item custom-p" href="#">Meu currículo</a>
+                                <li><a class="dropdown-item custom-p" aria-current="page" href="#">Meu perfil</a></li>
+                                <li><a class="dropdown-item custom-p" href="../alterar_dados.html">Alterar dados
+                                        de acesso</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item custom-p" href="#">Minhas candidaturas</a></li>
+                                <li><a class="dropdown-item custom-p" href="#">Sair</a></li>
                             </ul>
                         </li>
                         <li class="nav-item ms-4 d-flex align-items-center">
-                            <a href="" class="link-custom"><i class="fa-regular fa-envelope text-center"></i></a>
+                            <a href="../caixa_de_entrada.html" class="link-custom"><i
+                                    class="fa-regular fa-envelope text-center"></i></a>
                         </li>
                         <li class="nav-item ms-4 d-flex align-items-center">
-                            <a href="" class="link-custom"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                            <a href="../notificacao.html" class="link-custom"><i
+                                    class="fa-regular fa-bell"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -74,10 +78,17 @@
     </header>
 
     <main>
-        <div class="profile-header header-edited"></div>
+        <section class="profile-cover">
+            <div class="container d-flex justify-content-end">
+                <button type="submit" class="btn btn-outline-custom" onclick=""><i
+                        class="fa-solid fa-pen me-3"></i>Editar capa</button>
+            </div>
+        </section>
         <section class="container">
             <div class="d-flex align-items-center mt-3">
-                <img src="../imagens/foto_perfil.png" alt="Foto de perfil do usuário" class="profile-image me-5">
+                <button class="upload-button" onclick="">
+                    <img src="../../assets/imagens/foto_perfil.png" alt="Foto de perfil do usuário" class="profile-image me-5">
+                </button>
                 <div class="infos-user">
                     <h3 class="custom-h3">Clara do Vale Santos</h3>
                     <div class="d-flex">
@@ -87,29 +98,24 @@
                         </div>
                         <div class="d-flex align-items-center">
                             <i class="fa-solid fa-location-dot me-2""></i>
-                            <p class=" d-flex custom-p m-0">São Paulo, Brasil</p>
+                                <p class=" d-flex custom-p m-0">São Paulo, Brasil</p>
                         </div>
                     </div>
                 </div>
                 <div class="ms-auto">
                     <div class="d-flex align-items-center">
-                        <img src="../imagens/empresa-1.png" alt="Logo da empresa">
+                        <img src="../../assets/imagens/empresa-1.png" alt="Logo da empresa">
                         <p class="custom-p ms-3 m-0">Lorem ipsum Agency</p>
                     </div>
                 </div>
             </div>
-            <div class="container d-flex justify-content-end">
-                <button type="submit" class="btn btn-custom me-3"><i
-                        class="fa-solid fa-user-plus me-3"></i>Adicionar</button>
-                <button type="submit" class="btn btn-outline-custom me-3"><i class="fa-solid fa-message me-3"></i>Enviar
-                    mensagem</button>
-                <button type="submit" class="btn btn-outline-custom"><i
-                        class="fa-solid fa-share-nodes me-3"></i>Indicar</button>
-            </div>
         </section>
         <section class="container mt-5">
             <div class="content">
-                <h4 class="custom-h4">Sobre</h4>
+                <div class="d-flex justify-content-between">
+                    <h4 class="custom-h4">Sobre</h4>
+                    <a class="link-custom" href="#"><i class="fa-solid fa-pen"></i></a>
+                </div>
                 <p class="custom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic veritatis
                     nobis dolorem provident incidunt officiis at doloribus velit, natus alias consequatur? Quas fuga
                     eaque repudiandae perspiciatis natus necessitatibus, rerum enim impedit nobis, veniam pariatur
@@ -118,9 +124,12 @@
         </section>
         <section class="container mt-5">
             <div class="content">
-                <h4 class="custom-h4 mb-4">Formação Acadêmica</h4>
+                <div class="d-flex justify-content-between">
+                    <h4 class="custom-h4 mb-4">Formação Acadêmica</h4>
+                    <a class="link-custom" href="#"><i class="fa-solid fa-pen"></i></a>
+                </div>
                 <div class="d-flex align-items-center">
-                    <img src="../imagens/fiap.png" alt="Logo da faculdade" class="me-4">
+                    <img src="../../assets/imagens/fiap.png" alt="Logo da faculdade" class="me-4">
                     <div>
                         <h6 class="custom-h6-dark">Tecnólogo em Web Design</h6>
                         <div class="d-flex">
@@ -139,7 +148,10 @@
         </section>
         <section class="container mt-5">
             <div class="content">
-                <h4 class="custom-h4 mb-4">Habilidades</h4>
+                <div class="d-flex justify-content-between">
+                    <h4 class="custom-h4 mb-4">Habilidades</h4>
+                    <a class="link-custom" href="#"><i class="fa-solid fa-pen"></i></a>
+                </div>
                 <div class="d-flex">
                     <p class="chip-custom me-5">Figma</p>
                     <p class="chip-custom me-5">HTML</p>
@@ -154,7 +166,10 @@
         </section>
         <section class="container mt-5">
             <div class="content">
-                <h4 class="custom-h4 mb-4">Idiomas</h4>
+                <div class="d-flex justify-content-between">
+                    <h4 class="custom-h4 mb-4">Idiomas</h4>
+                    <a class="link-custom" href="#"><i class="fa-solid fa-pen"></i></a>
+                </div>
                 <div class="d-flex">
                     <p class="chip-custom me-5">Português (Fluente)</p>
                     <p class="chip-custom me-5">Inglês (Avançado)</p>
@@ -164,9 +179,12 @@
         </section>
         <section class="container mt-5">
             <div class="content">
-                <h4 class="custom-h4 mb-4">Formação Acadêmica</h4>
+                <div class="d-flex justify-content-between">
+                    <h4 class="custom-h4 mb-4">Formação Acadêmica</h4>
+                    <a class="link-custom" href="#"><i class="fa-solid fa-pen"></i></a>
+                </div>
                 <div class="d-flex align-items-center mb-5">
-                    <img src="../imagens/empresa-1.png" alt="Logo da empresa" class="me-4">
+                    <img src="../../assets/imagens/empresa-1.png" alt="Logo da empresa" class="me-4">
                     <div>
                         <h6 class="custom-h6-dark">Product Designer</h6>
                         <div class="d-flex">
@@ -182,7 +200,7 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center">
-                    <img src="../imagens/empresa-2.png" alt="Logo da empresa" class="me-4">
+                    <img src="../../assets/imagens/empresa-2.png" alt="Logo da empresa" class="me-4">
                     <div>
                         <h6 class="custom-h6-dark">Designer gráfico jr</h6>
                         <div class="d-flex">
@@ -202,7 +220,7 @@
     </main>
     <footer class="container my-5">
         <div class="d-flex align-items-center">
-            <img src="../imagens/Logo.png" alt="Logo da Recruta.ai">
+            <img src="../../assets/imagens/Logo.png" alt="Logo da Recruta.ai">
             <p class="custom-p ms-auto my-0">Copyright © 2024 Recruta.ai</p>
         </div>
     </footer>

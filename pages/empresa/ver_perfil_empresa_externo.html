@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recruta.ai</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <header class="container my-5">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/imagens/Logo.png" alt="Logo da Recruta.ai">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-2">
+                            <a class="nav-link link-custom" href="../home.html">Home</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link link-custom" href="#">Vagas</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link link-custom" href="../home_contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link dropdown-toggle link-custom" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Minha conta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item custom-p" href="#">Meu perfil</a></li>
+                                <li><a class="dropdown-item custom-p" href="../alterar_dados.html">Alterar dados
+                                        de acesso</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item custom-p" href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-4 d-flex align-items-center">
+                            <a href="../caixa_de_entrada.html" class="link-custom"><i
+                                    class="fa-regular fa-envelope text-center"></i></a>
+                        </li>
+                        <li class="nav-item ms-4 d-flex align-items-center">
+                            <a href="../notificacao.html" class="link-custom"><i
+                                    class="fa-regular fa-bell"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile-cover cover-company"></div>
+        <section class="container">
+            <div class="d-flex align-items-center mt-3">
+                <img src="../../assets/imagens/logo_empresa.png" alt="Logo da empresa" class="profile-image me-5">
+                <div class="infos-user">
+                    <h3 class="custom-h3">Auto Mecânica ltda.</h3>
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center me-5">
+                            <i class="fa-solid fa-suitcase me-2"></i>
+                            <p class=" d-flex custom-p m-0">Engenharia Mecânica</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot me-2""></i>
+                            <p class=" d-flex custom-p m-0">São Paulo, Brasil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-end">
+                <button type="submit" class="btn btn-custom me-3"><i class="fa-regular fa-bell me-3"></i>Acompanhar
+                    vagas</button>
+                <button type="submit" class="btn btn-outline-custom me-3"><i class="fa-solid fa-message me-3"></i>Enviar
+                    mensagem</button>
+                <button type="submit" class="btn btn-outline-custom"><i
+                        class="fa-solid fa-share-nodes me-3"></i>Indicar</button>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="content">
+                <h4 class="custom-h4">Sobre a empresa</h4>
+                <p class="custom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic veritatis
+                    nobis dolorem provident incidunt officiis at doloribus velit, natus alias consequatur? Quas fuga
+                    eaque repudiandae perspiciatis natus necessitatibus, rerum enim impedit nobis, veniam pariatur
+                    numquam accusamus fugiat quo deserunt tempore at quasi voluptates adipisci.</p>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="content">
+                <h4 class="custom-h4 mb-4">Habilidades comportamentais que procuramos</h4>
+                <div class="d-flex">
+                    <p class="chip-custom me-5">Comunicação</p>
+                    <p class="chip-custom me-5">Proatividade</p>
+                    <p class="chip-custom me-5">Adaptabilidade</p>
+                    <p class="chip-custom me-5">Pontualidade</p>
+                    <p class="chip-custom me-5">Liderança</p>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="content">
+                <div class="d-flex justify-content-between">
+                    <h4 class="custom-h4 mb-4">Vagas adicionadas recentemente</h4>
+                    <a class="link-custom" href="#">Ver todas</a>
+                </div>
+                <form class="d-flex my-4" role="search">
+                    <input class="form-control form-custom me-2" type="search" placeholder="Pesquise por vagas"
+                        aria-label="Search">
+                    <button class="btn btn-outline-custom" type="submit">Buscar</button>
+                </form>
+                <div class="d-flex cards my-5">
+                    <div class="card my-5">
+                        <img src="../../assets/imagens/logo_empresa.png" alt="" width="50" height="50">
+                        <h6 class="custom-h6-dark">Mecânico Jr.</h6>
+                        <p class="custom-p">AUTO MECÂNICA</p>
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center me-5">
+                                <i class="fa-solid fa-location-dot me-2""></i>
+                                <p class=" d-flex custom-p-smaller m-0">Presencial</p>
+                            </div>
+                            <div class="d-flex align-items-center me-5">
+                                <i class="fa-solid fa-clock me-2"></i>
+                                <p class=" d-flex custom-p-smaller m-0">Tempo integral</p>
+                            </div>
+                        </div>
+                        <p class="custom-p-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, culpa
+                            ipsum nesciunt sunt numquam cupiditate debitis reprehenderit voluptatibus officia commodi.
+                        </p>
+                        <button type="submit" class="btn btn-outline-custom mt-3">Mais detalhes</button>
+                    </div>
+                    <div class="card my-5">
+                        <img src="../../assets/imagens/logo_empresa.png" alt="" width="50" height="50">
+                        <h6 class="custom-h6-dark">Mecânico Senior</h6>
+                        <p class="custom-p">AUTO MECÂNICA</p>
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center me-5">
+                                <i class="fa-solid fa-location-dot me-2""></i>
+                                <p class=" d-flex custom-p-smaller m-0">Presencial</p>
+                            </div>
+                            <div class="d-flex align-items-center me-5">
+                                <i class="fa-solid fa-clock me-2"></i>
+                                <p class=" d-flex custom-p-smaller m-0">Tempo integral</p>
+                            </div>
+                        </div>
+                        <p class="custom-p-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, culpa
+                            ipsum nesciunt sunt numquam cupiditate debitis reprehenderit voluptatibus officia commodi.
+                        </p>
+                        <button type="submit" class="btn btn-outline-custom mt-3">Mais detalhes</button>
+                    </div>
+                    <div class="card my-5">
+                        <img src="../../assets/imagens/logo_empresa.png" alt="" width="50" height="50">
+                        <h6 class="custom-h6-dark">Mecânico Jr.</h6>
+                        <p class="custom-p">AUTO MECÂNICA</p>
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center me-5">
+                                <i class="fa-solid fa-location-dot me-2""></i>
+                                <p class=" d-flex custom-p-smaller m-0">Presencial</p>
+                            </div>
+                            <div class="d-flex align-items-center me-5">
+                                <i class="fa-solid fa-clock me-2"></i>
+                                <p class=" d-flex custom-p-smaller m-0">Tempo integral</p>
+                            </div>
+                        </div>
+                        <p class="custom-p-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, culpa
+                            ipsum nesciunt sunt numquam cupiditate debitis reprehenderit voluptatibus officia commodi.
+                        </p>
+                        <button type="submit" class="btn btn-outline-custom mt-3">Mais detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="container my-5">
+        <div class="d-flex align-items-center">
+            <img src="../../assets/imagens/Logo.png" alt="Logo da Recruta.ai">
+            <p class="custom-p ms-auto my-0">Copyright © 2024 Recruta.ai</p>
+        </div>
+    </footer>
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

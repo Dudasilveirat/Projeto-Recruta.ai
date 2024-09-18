@@ -23,6 +23,11 @@ html {
 body {
     font-family: var(--text-font);
     font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* footer */
@@ -30,7 +35,7 @@ footer {
     padding: 2.4rem;
 }
 
-/* * botões */
+/* botões */
 .btn {
     font-size: 1.6rem;
     border-radius: 3rem;
@@ -55,16 +60,19 @@ footer {
 }
 
 .btn-outline-custom {
+    background-color: var(--color-white) !important;
     border: 2px solid var(--color-purple-lilas-claro);
     color: var(--color-purple-dark);
 }
 
 .btn-outline-custom:hover {
+    background-color: var(--color-white) !important;
     border: 2px solid var(--color-purple-lilas-claro);
     color: var(--color-purple-medium);
 }
 
 .btn-outline-custom:active {
+    background-color: var(--color-white) !important;
     border: 2px solid var(--color-purple-lilas-claro) !important;
     color: var(--color-purple-light) !important;
 }
@@ -124,6 +132,12 @@ footer {
     color: var(--color-purple-light);
 }
 
+.custom-p-smaller {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-purple-light);
+}
+
 /* formulários */
 .form-control {
     background-color: var(--color-bg-form);
@@ -139,19 +153,20 @@ footer {
 .form-custom {
     padding: 2rem;
     border-radius: 3rem;
+    height: 64px;
 }
 
 ::placeholder {
     color: var(--color-purple-medium) !important;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .form-select {
     color: var(--color-purple-medium) !important;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .form-datetime {
     color: var(--color-purple-medium) !important;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }

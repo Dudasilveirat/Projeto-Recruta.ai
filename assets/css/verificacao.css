@@ -1,0 +1,150 @@
+.verificacao {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+
+}
+
+.formverificacao {
+
+
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    margin: 1rem auto;
+
+
+    & h3 {
+        color: var(--color-purple-dark);
+        font-size: 44px;
+        font-weight: 800;
+    }
+
+    & p {
+
+        color: var(--color-purple-light);
+        font-weight: 600;
+    }
+
+    & a {
+        color: var(--color-purple-light);
+    }
+
+}
+
+.box {
+
+
+    margin: 1.5rem;
+    color: var(--color-purple-dark);
+    border-radius: 30px;
+
+
+
+    & input,
+    select {
+        height: 4.5rem;
+        width: 40rem;
+        font-size: 1.8rem;
+        padding: 1rem;
+        border: 0;
+        background-color: #f9f9ff;
+        /* outline: 0; */
+        /* border: 1px solid var(--color-purple-light); */
+        border-radius: 30px;
+
+        &:focus {
+
+            border-color: var(--color-purple-light);
+            border: 0;
+
+        }
+
+        &::placeholder {
+
+
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--color-purple-light);
+        }
+    }
+
+}
+
+.botao {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 1.5rem;
+
+    & button {
+        width: 35rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        background-color: var(--color-purple-dark);
+        color: #fff;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .7s;
+
+
+        &:hover {
+            background-color: var(--color-purple-light);
+        }
+    }
+}
+
+.groupv {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.arrow {
+    margin-bottom: 400px;
+    display: flex;
+    color: var(--color-purple-dark);
+    text-decoration: none;
+
+}
+
+.botaop {
+    display: flex;
+    justify-content: flex-end;
+
+    & button {
+        width: 35rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        background-color: #fff;
+        color: var(--color-purple-dark);
+        border: 1px solid var(--color-purple-dark);
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .7s;
+
+
+        &:hover {
+            background-color: var(--color-purple-light);
+            color: #fff;
+        }
+    }
+}

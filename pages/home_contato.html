@@ -18,8 +18,8 @@
         rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../imagens/Logo.png" alt="Logo da Recruta.ai">
+                    <img src="../assets/imagens/Logo.png" alt="Logo da Recruta.ai">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +36,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item me-2">
-                            <a class="nav-link link-custom" href="../../index.html">Home</a>
+                            <a class="nav-link link-custom" href="./home.html">Home</a>
                         </li>
                         <li class="nav-item me-2">
-                            <a class="nav-link link-custom" href="./sobre.html">Quem somos</a>
+                            <a class="nav-link link-custom" href="./home_sobre.html">Quem somos</a>
                         </li>
                         <li class="nav-item me-2">
                             <a class="nav-link link-custom" href="#">Blog</a>
@@ -48,8 +48,10 @@
                             <a class="nav-link link-custom" aria-current="page" href="#">Contato</a>
                         </li>
                     </ul>
-                    <button type="submit" class="btn btn-outline-custom ms-4 me-3">Login</button>
-                    <button type="submit" class="btn btn-custom">Registre-se</button>
+                    <a href="./escolha_cadastro.html" class="link-custom">
+                        <button type="button" class="btn btn-outline-custom ms-4 me-3">Login</button>
+                        <button type="button" class="btn btn-custom">Registre-se</button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -58,38 +60,38 @@
         <section class="container">
             <div class="row g-5">
                 <div class="col col-lg-6">
-                    <img src="../imagens/Vetor-4.png" alt="Ilustração de uma mulher, um homem e um envelope" width="574"
-                        height="654">
+                    <img src="../assets/imagens/Vetor-4.png" alt="Ilustração de uma mulher, um homem e um envelope"
+                        width="574" height="654">
                 </div>
                 <div class="col col-lg-6 d-flex flex-column justify-content-center">
                     <h1 class="custom-h1">Contato</h1>
                     <p class="mt-2 mb-5 custom-p">Alguma dúvida? Sugestão? Nós da Recruta.ai estamos sempre
                         dispostos a te responder.</p>
-                    <form class="row" id="dados" method="post" action="">
+                    <form class="row" id="dados_contato" method="post" action="">
                         <div class="col-12 col-lg-6 mb-3">
                             <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control form-control-lg form-custom" id="nome"
+                            <input type="text" name="nome" class="form-control form-control-lg form-custom" id="nome"
                                 placeholder="Nome Sobrenome" required>
                         </div>
                         <div class="col-12 col-lg-6 mb-3">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control form-control-lg form-custom" id="email"
+                            <input type="email" name="email" class="form-control form-control-lg form-custom" id="email"
                                 placeholder="exemplo@email.com" required>
                         </div>
                         <div class="col-12 col-lg-6 mb-3">
                             <label for="telefone" class="form-label">Telefone</label>
-                            <input type="text" class="form-control form-control-lg form-custom" id="telefone"
-                                placeholder="(00) 00000-0000" required>
+                            <input type="text" name="telefone" class="form-control form-control-lg form-custom"
+                                id="telefone" placeholder="(00) 00000-0000" required>
                         </div>
                         <div class="col-12 col-lg-6 mb-3">
                             <label for="empresa" class="form-label">Empresa (Opcional)</label>
-                            <input type="text" class="form-control form-control-lg form-custom" id="empresa"
-                                placeholder="Ex: Microsoft">
+                            <input type="text" name="empresa" class="form-control form-control-lg form-custom"
+                                id="empresa" placeholder="Ex: Microsoft">
                         </div>
                         <div class="col-12 mb-3">
                             <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea class="form-control form-control-lg" id="mensagem"
-                                placeholder="Escreva sua mensagem" rows="5" required></textarea>
+                            <textarea class="form-control form-control-lg" id="mensagem" name="mensagem"
+                                placeholder="Escreva sua mensagem" rows="6" required></textarea>
                         </div>
                     </form>
                     <div class="col col-lg-6 mt-5">
@@ -102,7 +104,7 @@
 
     <footer class="container my-5">
         <div class="d-flex align-items-center">
-            <img src="../imagens/Logo.png" alt="Logo da Recruta.ai">
+            <img src="../assets/imagens/Logo.png" alt="Logo da Recruta.ai">
             <p class="custom-p ms-auto my-0">Copyright © 2024 Recruta.ai</p>
         </div>
     </footer>

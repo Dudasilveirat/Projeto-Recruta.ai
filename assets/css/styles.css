@@ -4,6 +4,7 @@
 }
 
 .link-custom {
+    text-decoration: none;
     color: var(--color-purple-dark) !important;
     font-weight: 500;
 }
@@ -32,13 +33,17 @@
 }
 
 .card {
+    border-radius: 2rem;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-purple-lilas-claro);
+    padding: 2.4rem;
+}
+
+.card-home {
     width: 260px;
     height: 280px;
-    border-radius: 2rem;
-    border: 1px solid var(--color-purple-lilas-claro);
     justify-content: center;
     align-items: center;
-    padding: 2.4rem;
 }
 
 .upload-button {
@@ -46,7 +51,7 @@
     border: transparent;
 }
 
-.profile-header {
+.profile-cover {
     background-image: url(../imagens/capa.png);
     background-position: center;
     background-size: cover;
@@ -59,8 +64,12 @@
     position: relative;
 }
 
-.header-edited {
+.cover-edited {
     background-image: url(../imagens/capa_2.jpg);
+}
+
+.cover-company {
+    background-image: url(../imagens/capa_empresa.jpg);
 }
 
 .profile-image {
@@ -80,4 +89,30 @@
     background-color: var(--color-purple-dark);
     border-radius: 3rem;
     padding: 1.4rem 2rem;
+}
+
+.chat-custom {
+    background-color: var(--color-bg-form);
+    border-radius: 1rem;
+    padding: 1.6rem;
+}
+
+#chat-active {
+    border: 1px solid var(--color-purple-light);
+}
+
+.custom-altura {
+    min-height: 100vh;
+    position: relative;
+}
+
+.form-fixed {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    width: 90%;
+}
+
+#bg-invite-custom {
+    background-color: var(--color-bg-form);
 }

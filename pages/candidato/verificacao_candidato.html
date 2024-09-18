@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação Candidato</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/verificacao.css">
+
+    <!-- Chamada Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="verificacao">
+        <div class="arrow">
+            <a href="./escolha_cadastro.html" class="arrow fa-solid fa-arrow-left fa-2x"></a>
+        </div>
+        <section class="formverificacao">
+            <img src="../../assets/imagens/Logo.png" alt="logo do site">
+            <h3>Quase Lá!</h3>
+            <p>Informe o código de verificação enviado para o
+                e-mail clara.valesantos@gmail.com</p>
+            <form name="formDados" id="formDados" method="get" action="">
+                <div class="groupv">
+                    <div class="box password">
+                        <!-- <label for="senha">Senha</label> -->
+                        <input type="password" id="senha" name="senha" placeholder="Código de Verificação" minlength="8"
+                            maxlength="20" required>
+                    </div>
+                    <div class="botao">
+                        <a href="./fim_cadastro.html">
+                            <button type="button">Confirmar</button>
+                        </a>
+                    </div>
+                    <p>Não recebeu o código?<a href="#">Reenviar e-mail</a></p>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

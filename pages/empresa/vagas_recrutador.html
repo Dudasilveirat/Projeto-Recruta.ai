@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas Recrutador</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/lista_de_vagas.css">
+
+    <!-- Chamada Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!-- Inicio Cabeçalho -->
+    <header class="container my-5">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/imagens/Logo.png" alt="Logo da Recruta.ai">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-2">
+                            <a class="nav-link link-custom" href="../home.html">Home</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link link-custom" aria-current="page" href="#">Minhas vagas</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link link-custom" href="../home_contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link dropdown-toggle link-custom" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Minha conta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item custom-p" href="#">Meu perfil</a></li>
+                                <li><a class="dropdown-item custom-p" href="../alterar_dados.html">Alterar dados
+                                        de acesso</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item custom-p" href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-4 d-flex align-items-center">
+                            <a href="../caixa_de_entrada.html" class="link-custom"><i
+                                    class="fa-regular fa-envelope text-center"></i></a>
+                        </li>
+                        <li class="nav-item ms-4 d-flex align-items-center">
+                            <a href="../notificacao.html" class="link-custom"><i class="fa-regular fa-bell"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim Cabeçalho -->
+
+    <div class="containervr">
+        <div class="teste">
+            <h1>Minhas vagas</h1>
+            <div class="botao">
+                <button type="submit"><i class="fa-solid fa-plus"></i> Aplicar para vaga</button>
+            </div>
+        </div>
+
+        <div class="pesquisa">
+            <label for="search"><img src="../../assets/imagens/search-icon-5f8271.webp" alt=""></label>
+            <input type="search" id="search" name="search" placeholder="Pesquisar vagas" max="50" required>
+
+            <div class="botaop">
+                <button type="submit">Mais filtros</button>
+            </div>
+        </div>
+
+        <div class="vagascadastradas">
+            <h2>Vagas cadastradas</h2>
+            <div class="listvagas">
+                <!-- inicio card -->
+                <div class="vaga-item ">
+                    <div class="titulocard">
+                        <img src="../../assets/imagens/ftvagas.png" alt="">
+                        <h2>Mecânico Jr.</h2>
+                        <h3>AUTO MECÂNICA</h3>
+                    </div>
+
+                    <div class="modelotrabalho">
+                        <p><i class="fa-solid fa-location-dot"></i> Presencial</p>
+                        <p><i class="fa-regular fa-clock"></i> Tempo integral</p>
+                    </div>
+
+                    <p>By creating a visual guide along the way, the designer or developer can get input from the other
+                        people.</p>
+
+                    <div class="botoes">
+                        <div class="botaoc">
+                            <button type="submit">editar</button>
+                        </div>
+                        <div class="botaoc">
+                            <button type="submit"> Mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim card -->
+
+                <!-- inicio card -->
+                <div class="vaga-item ">
+                    <div class="titulocard">
+                        <img src="../../assets/imagens/ftvagas.png" alt="">
+                        <h2>Mecânico Senior</h2>
+                        <h3>AUTO MECÂNICA</h3>
+                    </div>
+
+                    <div class="modelotrabalho">
+                        <p><i class="fa-solid fa-location-dot"></i> Presencial</p>
+                        <p><i class="fa-regular fa-clock"></i> Tempo integral</p>
+                    </div>
+
+                    <p>By creating a visual guide along the way, the designer or developer can get input from the other
+                        people.</p>
+
+                    <div class="botoes">
+                        <div class="botaoc">
+                            <button type="submit">editar</button>
+                        </div>
+                        <div class="botaoc">
+                            <button type="submit"> Mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim card -->
+
+                <!-- inicio card -->
+                <div class="vaga-item ">
+                    <div class="titulocard">
+                        <img src="../../assets/imagens/ftvagas.png" alt="">
+                        <h2>Mecânico Jr.</h2>
+                        <h3>AUTO MECÂNICA</h3>
+                    </div>
+
+                    <div class="modelotrabalho">
+                        <p><i class="fa-solid fa-location-dot"></i> Presencial</p>
+                        <p><i class="fa-regular fa-clock"></i> Tempo integral</p>
+                    </div>
+
+                    <p>By creating a visual guide along the way, the designer or developer can get input from the other
+                        people.</p>
+
+                    <div class="botoes">
+                        <div class="botaoc">
+                            <button type="submit">editar</button>
+                        </div>
+                        <div class="botaoc">
+                            <button type="submit"> Mais detalhes</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fim card -->
+
+                <!-- inicio card -->
+                <div class="vaga-item ">
+                    <div class="titulocard">
+
+                        <img src="../../assets/imagens/ftvagas.png" alt="">
+                        <h2>Mecânico Senior</h2>
+                        <h3>AUTO MECÂNICA</h3>
+                    </div>
+
+                    <div class="modelotrabalho">
+                        <p><i class="fa-solid fa-location-dot"></i> Presencial</p>
+                        <p><i class="fa-regular fa-clock"></i> Tempo integral</p>
+                    </div>
+
+                    <p>By creating a visual guide along the way, the designer or developer can get input from the other
+                        people.</p>
+
+                    <div class="botoes">
+                        <div class="botaoc">
+                            <button type="submit">editar</button>
+                        </div>
+                        <div class="botaoc">
+                            <button type="submit"> Mais detalhes</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fim card -->
+
+                <!-- inicio card -->
+                <div class="vaga-item ">
+                    <div class="titulocard">
+                        <img src="../../assets/imagens/ftvagas.png" alt="">
+                        <h2>Mecânico Senior</h2>
+                        <h3>AUTO MECÂNICA</h3>
+
+                    </div>
+
+                    <div class="modelotrabalho">
+                        <p><i class="fa-solid fa-location-dot"></i> Presencial</p>
+                        <p><i class="fa-regular fa-clock"></i> Tempo integral</p>
+                    </div>
+
+                    <p>By creating a visual guide along the way, the designer or developer can get input from the other
+                        people.</p>
+
+                    <div class="botoes">
+                        <div class="botaoc">
+                            <button type="submit">editar</button>
+                        </div>
+                        <div class="botaoc">
+                            <button type="submit"> Mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim card -->
+
+                <!-- inicio card -->
+                <div class="vaga-item ">
+                    <div class="titulocard">
+                        <img src="../../assets/imagens/ftvagas.png" alt="">
+                        <h2>Mecânico Jr.</h2>
+                        <h3>AUTO MECÂNICA</h3>
+                    </div>
+
+                    <div class="modelotrabalho">
+                        <p><i class="fa-solid fa-location-dot"></i> Presencial</p>
+                        <p><i class="fa-regular fa-clock"></i> Tempo integral</p>
+                    </div>
+
+                    <p>By creating a visual guide along the way, the designer or developer can get input from the other
+                        people.</p>
+
+                    <div class="botoes">
+                        <div class="botaoc">
+                            <button type="submit">editar</button>
+                        </div>
+                        <div class="botaoc">
+                            <button type="submit"> Mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim card -->
+
+                <!-- inicio card -->
+                <div class="vaga-item ">
+                    <div class="titulocard">
+                        <img src="../../assets/imagens/ftvagas.png" alt="">
+                        <h2>Mecânico Senior</h2>
+                        <h3>AUTO MECÂNICA</h3>
+
+                    </div>
+
+                    <div class="modelotrabalho">
+                        <p><i class="fa-solid fa-location-dot"></i> Presencial</p>
+                        <p><i class="fa-regular fa-clock"></i> Tempo integral</p>
+                    </div>
+
+                    <p>By creating a visual guide along the way, the designer or developer can get input from the other
+                        people.</p>
+
+                    <div class="botoes">
+                        <div class="botaoc">
+                            <button type="submit">editar</button>
+                        </div>
+                        <div class="botaoc">
+                            <button type="submit"> Mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim card -->
+
+                <!-- inicio card -->
+                <div class="vaga-item ">
+                    <div class="titulocard">
+                        <img src="../../assets/imagens/ftvagas.png" alt="">
+                        <h2>Mecânico Jr.</h2>
+                        <h3>AUTO MECÂNICA</h3>
+
+                    </div>
+
+                    <div class="modelotrabalho">
+                        <p><i class="fa-solid fa-location-dot"></i> Presencial</p>
+                        <p><i class="fa-regular fa-clock"></i> Tempo integral</p>
+                    </div>
+
+                    <p>By creating a visual guide along the way, the designer or developer can get input from the other
+                        people.</p>
+
+                    <div class="botoes">
+                        <div class="botaoc">
+                            <button type="submit">editar</button>
+                        </div>
+                        <div class="botaoc">
+                            <button type="submit"> Mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim card -->
+            </div>
+        </div>
+
+        <footer class="container my-5">
+            <div class=" d-flex align-items-center">
+                <img src="../../assets/imagens/Logo.png" alt="Logo da Recruta.ai">
+                <p class="custom-p ms-auto my-0">Copyright © 2024 Recruta.ai</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

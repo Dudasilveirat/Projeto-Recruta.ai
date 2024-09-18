@@ -1,0 +1,127 @@
+.cadastroC {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+
+    & a {
+        text-decoration: none;
+        color: var(--color-purple-dark);
+
+        &:hover {
+            color: var(--color-purple-light);
+        }
+    }
+}
+
+
+.formulario {
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    margin: 1rem auto;
+
+
+    & h3 {
+        color: var(--color-purple-dark);
+        font-size: 44px;
+        font-weight: 800;
+    }
+
+    & p {
+
+        color: var(--color-purple-light);
+        font-weight: 600;
+    }
+
+
+}
+
+.arrow {
+    margin-bottom: 400px;
+    display: flex;
+
+
+}
+
+
+.group {
+    /* border: 1px solid rgb(21, 169, 228); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    gap: -5px;
+
+}
+
+.box {
+
+    margin: 1.5rem;
+    color: var(--color-purple-dark);
+    border-radius: 30px;
+
+
+
+    & input,
+    select {
+        height: 4.5rem;
+        width: 40rem;
+        font-size: 1.8rem;
+        padding: 1rem;
+        border: 0;
+        background-color: #f9f9ff;
+        /* outline: 0; */
+        /* border: 1px solid var(--color-purple-light); */
+        border-radius: 30px;
+
+        &:focus {
+
+            border-color: var(--color-purple-light);
+            border-width: 1px;
+
+        }
+
+        &::placeholder {
+
+
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--color-purple-light);
+        }
+    }
+}
+
+.botao {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 1.5rem;
+
+    & button {
+        width: 35rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        background-color: var(--color-purple-dark);
+        color: #fff;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .7s;
+
+        &:hover {
+            background-color: var(--color-purple-light);
+        }
+    }
+}

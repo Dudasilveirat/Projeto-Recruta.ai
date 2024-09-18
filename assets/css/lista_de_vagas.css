@@ -1,0 +1,244 @@
+.icons{
+    display: flex;
+    gap: 1.6rem;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.icons i{
+    color: var(--color-purple-dark);
+
+    &:hover{
+        color: var(--color-purple-light);
+        transition: .7s;
+    }
+}
+
+.containervr{
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 3rem;
+    color: var(--color-light);
+    text-align: center;
+    & h1{
+        font-size: 5rem;
+        font-weight: 600;
+        color: var(--color-purple-dark);
+    }
+}
+.botao {
+    
+    padding: 2rem 1.5rem;
+
+    & button {
+        width: 20rem;
+        height: 5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        background-color: var(--color-purple-dark);
+        color: #fff;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .7s;
+
+        &:hover {
+            background-color: var(--color-purple-light);
+        }
+    }
+}
+
+.teste{
+    width: 50%;
+    
+    margin: 5rem 0 1rem 0;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;   
+    gap: 30px;
+    justify-content: space-between;
+}
+.pesquisa{
+    width: 50%;
+    margin: 1rem;
+    
+    margin: rem;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;   
+    /* gap: 30px; */
+    justify-content: space-between;
+    & label {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: var(--color-purple-dark);
+
+        && img{
+            width: 30px;
+            
+        }
+    }
+
+    & input, select {
+        height: 5rem;
+        width: 70rem;
+        font-size: 1.8rem;
+        padding: 1rem;
+        outline: 0;
+        background-color: var(--color-purple-lilas-muito-claro);
+        border: 1px solid var(--color-purple-light);
+        border-radius: 50px;
+       
+        &:focus {
+            border-color: var(--color-purple-dark);
+            border-width: 2px;
+        }
+
+        &::placeholder {
+            color: #666;
+        }
+    }
+}
+.search{
+    font-size: 2rem;
+        width: 80%;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #666;
+}
+
+.botaop {
+ 
+
+    & button {
+        width: 20rem;
+        height: 5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        background-color: #fff;
+        color: var(--color-purple-dark);
+        border: 1px solid var(--color-purple-dark);
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .7s;
+       
+
+        &:hover {
+            background-color: var(--color-purple-light);
+            color: #fff;
+        }
+    }
+}
+/*inicio Cards */
+.vagascadastradas{
+    /* border: 1px solid green; */
+    width: 80%;
+    min-height: 100vh;
+    margin: 5rem auto;
+    text-align: center;
+    & h2{
+        color: var(--color-purple-dark);
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+
+
+.listvagas{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+
+}
+
+.vaga-item{
+/* border: 1px solid blueviolet; */
+margin: 2rem;
+padding: 2rem;
+width: 20%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+box-shadow: 1px 1px 2rem var(--color-purple-dark);
+
+border-radius: 7px;
+transition: .5s;
+& img{
+width: 75px;
+}
+& h3{
+    font-size: 1.33rem;
+    font-weight: 600;
+    color: var(--color-purple-dark);
+}
+& p{
+    font-weight: 400;
+    color: var(--color-purple-light);
+    
+}
+}
+
+.titulocard{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.modelotrabalho{
+    display: flex;
+    gap: 10px;
+    &  p{
+        font-weight: 600;
+    color: var(--color-purple-dark);
+    background-color: var(--color-purple-lilas-muito-claro);
+    border-radius: 7px;
+    }
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* border: 1px solid  blue; */
+    }
+
+    .botaoc {
+ padding-bottom: 20px;
+
+        & button {
+            width: 12.5rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            background-color: #fff;
+            color: var(--color-purple-dark);
+            border: 1px solid var(--color-purple-dark);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: .7s;
+           
+    
+            &:hover {
+                background-color: var(--color-purple-light);
+                color: #fff;
+            }
+        }
+    }
+
+    /* fim Cards */
